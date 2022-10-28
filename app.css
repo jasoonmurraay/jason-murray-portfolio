@@ -1,0 +1,321 @@
+html {
+    scroll-behavior: smooth;
+}
+
+
+#title {
+    margin-top: 5rem;
+    margin-bottom: 5rem;
+}
+
+#socialMedia {
+    margin-bottom: 5rem;
+    margin-top: 2rem
+}
+
+ #about, #skills, #projects {
+    margin-bottom: 10rem;
+    margin-top: 10rem;
+    padding-bottom: 5rem;
+    padding-top: 5rem;
+    padding-left: 1rem;
+    padding-right: 1rem;
+}
+
+#contact {
+    margin-top: 10rem;
+    padding-top: 5rem;
+    padding-left: 1rem;
+    padding-right: 1rem;
+    margin-bottom: 5rem;
+}
+
+#navbar {
+    background-color: #e00122;
+    color: white
+}
+
+#body {
+    background-color: black;
+    color: white;
+}
+.navbar-dark .navbar-nav .nav-link {
+    text-decoration: none;
+    color: white;   
+}
+
+
+
+.navbar-dark .navbar-nav .nav-link:visited {
+    text-decoration: none;
+    color:white
+}
+
+.navbar-dark .navbar-nav .nav-link[aria-current='page'] {
+    text-decoration: underline solid white;
+    text-underline-position: under;
+}
+
+.navbar-dark .navbar-nav .nav-link:hover {
+    color: black;
+    transform: translateY(-5%);
+    transition: 500ms;
+}
+
+#LinkedInDiv {
+    background-image: url('images/linkedin-icon.png');
+}
+
+#LinkedInDiv:hover {
+    background-image: url('images/linkedin-white-icon.png');
+}
+
+#GitHubDiv {
+    background-image: url('images/github-logo.png');
+}
+
+#GitHubDiv:hover {
+    background-image: url('images/github-white-logo.png');
+}
+
+#IndeedDiv {
+    background-image: url('images/indeed-icon.png');
+}
+
+#IndeedDiv:hover {
+    background-image: url('images/indeed-white-icon.png');
+}
+
+#LinkedInDiv, #GitHubDiv, #IndeedDiv {
+    display: block;
+    background-size: contain;
+    width: 50px;
+    height: auto;
+    transition: 750ms;
+    background-repeat: no-repeat;
+}
+
+#LinkedInDiv a, #GitHubDiv a, #IndeedDiv a {
+    display: block;
+    width: 100%;
+    height: 100%;
+}
+
+#LinkedInDiv:hover, #GitHubDiv:hover, #IndeedDiv:hover {
+    display: block;
+    cursor: pointer;
+    transform: translateY(-5%);
+    transition: 750ms;
+}
+
+#navSocials {
+    width: 100%;
+    margin-top: 100%;
+    margin-left: 0
+}
+
+#LINavItem {
+    background-image: url('images/linkedin-white-icon.png');
+}
+
+#LINavItem:hover {
+    background-image: url('images/linkedin-black-icon.png');
+    transform: translateY(-5%);
+}
+
+#GHNavItem {
+    background-image: url('images/github-white-logo.png');
+}
+#GHNavItem:hover {
+    background-image: url('images/github-black-logo.png');
+    transform: translateY(-5%);
+}
+
+#IndNavItem {
+    background-image: url('images/indeed-white-icon.png');
+}
+
+#IndNavItem:hover {
+    background-image: url('images/indeed-black-icon.png');
+    transform: translateY(-5%);
+}
+
+#LINavItem, #GHNavItem, #IndNavItem {
+    background-size: 100%;
+    background-repeat: no-repeat;
+    width: 25px;
+    height: 25px;
+    margin: 25% auto;
+    transition: 500ms;
+}
+
+#LINavItem a, #GHNavItem a, #IndNavItem a {
+    width: 100%;
+    height: 100%;
+}
+
+
+#name p {
+    margin: 5% 0.75rem 0 0.75rem
+}
+
+#name:hover {
+    cursor:default
+}
+
+#name p:hover {
+    animation: rotate 1s linear;
+    color: #e00122;
+    cursor: default;
+}
+
+#submitBtn {
+    background-color: none;
+    color: #e00122;
+    border: 1px solid #e00122;
+    margin-top: 2rem;
+    transition: 500ms;
+}
+
+#submitBtn:hover {
+    background-color: #e00122;
+    color: white;
+    border: 1px solid #e00122;
+    transform: translateY(-5%);
+    transition: 500ms;
+}
+
+@keyframes rotate {
+    0% {
+        transform: rotateY(0deg) translateY(0%)
+    }
+    50% {
+        transform: rotateY(180deg) translateY(-5%);
+    }
+    100% {
+        transform: rotateY(360deg) translateY(0%);
+    }
+}
+
+/* #htmlLogo, #cssLogo {
+    transform: translateY(-10%);
+} */
+
+#tools #skill {
+    margin: 0 5%;
+}
+
+#tools #skill img {
+    max-width: 80px;
+    max-height: 80px;
+    width: auto;
+}
+
+#firstNameInput, #lastNameInput {
+    width: 80% !important;
+}
+
+
+@media(max-width: 630px) {
+    #LinkedInIcon, #GitHubIcon, #IndeedIcon {
+        display: block;
+        max-width: 30px;
+    }
+    #title {
+        font-size: 2rem;
+    }
+}
+
+.form-control {
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+    background-color: black;
+    color: white;
+    border: 1px solid white;
+}
+
+.form-control:focus {
+    background-color: black;
+    color: white;
+    border: 2px solid #e00122;
+    box-shadow: none;
+}
+
+.card {
+    color: black;
+}
+
+.card img {
+    width: 50px;
+    max-height: 200px;
+}
+
+#mailIcon {
+    width: 50px;
+    height: auto;
+}
+
+
+@media (max-width: 991px) {
+    .navbar-dark .navbar-toggler-icon {
+        background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 30 30'%3e%3cpath stroke='rgba%28255, 255, 255, 1%29' stroke-linecap='round' stroke-miterlimit='10' stroke-width='2' d='M4 7h22M4 15h22M4 23h22'/%3e%3c/svg%3e");
+        border: transparent;
+        margin-top: 1.5em;
+        transition: 500ms;
+        /* width: 0.75em !important;
+        height: 0.75em !important; */
+    }
+
+    .navbar-dark .navbar-toggler-icon:hover {
+        background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 30 30'%3e%3cpath stroke='rgb%28224, 1, 34%29' stroke-linecap='round' stroke-miterlimit='10' stroke-width='2' d='M4 7h22M4 15h22M4 23h22'/%3e%3c/svg%3e");
+        transform: translateY(-5%);
+    }
+
+    #name {
+        display: flex;
+        flex-direction: column;
+    }
+
+    /* .collapsing, .collapse {
+        display: none;
+    }
+
+    .show {
+        display: block;
+    } */
+
+    .navbar-dark .navbar-nav .nav-link:hover {
+        color: #e00122
+    } 
+   
+
+    #navbar {
+        background-color: black;
+    }
+    
+    .navbar-dark .navbar-toggler {
+        border: none !important;
+        border-color: none
+    }
+
+    .navbar-toggler:focus {
+        box-shadow: none !important;
+    }
+    
+    .navbar > .container-fluid {
+        flex-wrap: nowrap;
+    }
+
+    #LINavItem:hover {
+        background-image: url('./images/linkedin-icon.png');
+    }
+
+    #GHNavItem:hover {
+        background-image: url('./images/github-logo.png');
+    }
+
+    #IndNavItem:hover {
+        background-image: url('./images/indeed-icon.png');
+    }
+}
+
