@@ -13,7 +13,9 @@ html {
     margin-top: 2rem
 }
 
- #about, #skills, #projects {
+#about,
+#skills,
+#projects {
     margin-bottom: 10rem;
     margin-top: 10rem;
     padding-bottom: 5rem;
@@ -39,16 +41,17 @@ html {
     background-color: black;
     color: white;
 }
+
 .navbar-dark .navbar-nav .nav-link {
     text-decoration: none;
-    color: white;   
+    color: white;
 }
 
 
 
 .navbar-dark .navbar-nav .nav-link:visited {
     text-decoration: none;
-    color:white
+    color: white
 }
 
 .navbar-dark .navbar-nav .nav-link[aria-current='page'] {
@@ -86,7 +89,9 @@ html {
     background-image: url('images/indeed-white-icon.png');
 }
 
-#LinkedInDiv, #GitHubDiv, #IndeedDiv {
+#LinkedInDiv,
+#GitHubDiv,
+#IndeedDiv {
     display: block;
     background-size: contain;
     width: 50px;
@@ -95,13 +100,17 @@ html {
     background-repeat: no-repeat;
 }
 
-#LinkedInDiv a, #GitHubDiv a, #IndeedDiv a {
+#LinkedInDiv a,
+#GitHubDiv a,
+#IndeedDiv a {
     display: block;
     width: 100%;
     height: 100%;
 }
 
-#LinkedInDiv:hover, #GitHubDiv:hover, #IndeedDiv:hover {
+#LinkedInDiv:hover,
+#GitHubDiv:hover,
+#IndeedDiv:hover {
     display: block;
     cursor: pointer;
     transform: translateY(-5%);
@@ -126,6 +135,7 @@ html {
 #GHNavItem {
     background-image: url('images/github-white-logo.png');
 }
+
 #GHNavItem:hover {
     background-image: url('images/github-black-logo.png');
     transform: translateY(-5%);
@@ -140,7 +150,9 @@ html {
     transform: translateY(-5%);
 }
 
-#LINavItem, #GHNavItem, #IndNavItem {
+#LINavItem,
+#GHNavItem,
+#IndNavItem {
     background-size: 100%;
     background-repeat: no-repeat;
     width: 25px;
@@ -149,7 +161,9 @@ html {
     transition: 500ms;
 }
 
-#LINavItem a, #GHNavItem a, #IndNavItem a {
+#LINavItem a,
+#GHNavItem a,
+#IndNavItem a {
     width: 100%;
     height: 100%;
 }
@@ -160,13 +174,22 @@ html {
 }
 
 #name:hover {
-    cursor:default
+    cursor: default
 }
 
 #name p:hover {
     animation: rotate 1s linear;
     color: #e00122;
     cursor: default;
+}
+
+#mailIcon {
+    transition: 500ms;
+}
+
+#mailIcon:hover {
+    transform: translateY(-5%);
+    transition: 500ms;
 }
 
 #submitBtn {
@@ -189,9 +212,11 @@ html {
     0% {
         transform: rotateY(0deg) translateY(0%)
     }
+
     50% {
         transform: rotateY(180deg) translateY(-5%);
     }
+
     100% {
         transform: rotateY(360deg) translateY(0%);
     }
@@ -211,16 +236,21 @@ html {
     width: auto;
 }
 
-#firstNameInput, #lastNameInput {
+#firstNameInput,
+#lastNameInput {
     width: 80% !important;
 }
 
 
 @media(max-width: 630px) {
-    #LinkedInIcon, #GitHubIcon, #IndeedIcon {
+
+    #LinkedInIcon,
+    #GitHubIcon,
+    #IndeedIcon {
         display: block;
         max-width: 30px;
     }
+
     #title {
         font-size: 2rem;
     }
@@ -286,13 +316,13 @@ html {
 
     .navbar-dark .navbar-nav .nav-link:hover {
         color: #e00122
-    } 
-   
+    }
+
 
     #navbar {
         background-color: black;
     }
-    
+
     .navbar-dark .navbar-toggler {
         border: none !important;
         border-color: none
@@ -301,8 +331,8 @@ html {
     .navbar-toggler:focus {
         box-shadow: none !important;
     }
-    
-    .navbar > .container-fluid {
+
+    .navbar>.container-fluid {
         flex-wrap: nowrap;
     }
 
@@ -318,4 +348,3 @@ html {
         background-image: url('./images/indeed-icon.png');
     }
 }
-

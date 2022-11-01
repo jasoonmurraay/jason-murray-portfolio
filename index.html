@@ -1,407 +1,236 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link
-      href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css"
-      rel="stylesheet"
-      integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC"
-      crossorigin="anonymous"
-    />
-    <link rel="stylesheet" href="app.css" />
-    <title>Portfolio</title>
-  </head>
-  <body>
-    <div class="d-flex flex-row-reverse">
-      <nav
-        id="navbar"
-        class="navbar navbar-expand-lg navbar-dark w-xs-2 w-md-auto d-flex flex-column justify-content-start"
-      >
-        <div
-          id="navContainer"
-          class="d-flex flex-column container-fluid sticky-top"
-        >
-          <button
-            id="navButton"
-            class="navbar-toggler"
-            type="button"
-            data-bs-toggle="collapse"
-            data-bs-target="#navbarSupportedContent"
-            aria-controls="navbarSupportedContent"
-            aria-expanded="false"
-            aria-label="Toggle navigation"
-          >
-            <span class="navbar-toggler-icon"></span>
-          </button>
-          <div class="d-none flex-column" id="navbarSupportedContent">
-            <ul
-              id="navLinks"
-              class="flex-column navbar-nav ms-1 me-auto mb-2 mb-lg-0"
-            >
-              <li class="nav-item">
-                <a class="nav-link" href="#">Home</a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link" href="#about">About</a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link" href="#skills">Skills</a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link" href="#projects">Projects</a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link" href="#contact">Contact</a>
-              </li>
-              <li>
-                <ul
-                  id="navSocials"
-                  class="d-none flex-column align-items-center justify-content-center navbar-nav"
-                >
-                  <li class="nav-item" id="LINavItem">
-                    <a
-                      id="LinkedInNavLink"
-                      class="nav-link"
-                      href="https://www.linkedin.com/in/jason-murray-13b494174/"
-                      target="_blank"
-                    >
-                    </a>
-                  </li>
-                  <li class="nav-item" id="GHNavItem">
-                    <a
-                      id="GitHubNavLink"
-                      class="nav-link"
-                      href="https://github.com/jasoonmurraay"
-                      target="_blank"
-                    ></a>
-                  </li>
-                  <li class="nav-item" id="IndNavItem">
-                    <a
-                      id="IndeedNavLink"
-                      class="nav-link"
-                      href="https://profile.indeed.com/?hl=en&co=US&from=gnav-homepage"
-                      target="_blank"
-                    >
-                    </a>
-                  </li>
-                </ul>
-              </li>
-            </ul>
+
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous" />
+  <link rel="stylesheet" href="app.css" />
+  <title>Portfolio</title>
+</head>
+
+<body>
+  <div class="d-flex flex-row-reverse">
+    <nav id="navbar"
+      class="navbar navbar-expand-lg navbar-dark w-xs-2 w-md-auto d-flex flex-column justify-content-start">
+      <div id="navContainer" class="d-flex flex-column container-fluid sticky-top">
+        <button id="navButton" class="navbar-toggler" type="button" data-bs-toggle="collapse"
+          data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
+          aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="d-none flex-column" id="navbarSupportedContent">
+          <ul id="navLinks" class="flex-column navbar-nav ms-1 me-auto mb-2 mb-lg-0">
+            <li class="nav-item">
+              <a class="nav-link" href="#">Home</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#about">About</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#skills">Skills</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#projects">Projects</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#contact">Contact</a>
+            </li>
+            <li>
+              <ul id="navSocials" class="d-none flex-column align-items-center justify-content-center navbar-nav">
+                <li class="nav-item" id="LINavItem">
+                  <a id="LinkedInNavLink" class="nav-link" href="https://www.linkedin.com/in/jason-murray-13b494174/"
+                    target="_blank">
+                  </a>
+                </li>
+                <li class="nav-item" id="GHNavItem">
+                  <a id="GitHubNavLink" class="nav-link" href="https://github.com/jasoonmurraay" target="_blank"></a>
+                </li>
+                <li class="nav-item" id="IndNavItem">
+                  <a id="IndeedNavLink" class="nav-link"
+                    href="https://profile.indeed.com/?hl=en&co=US&from=gnav-homepage" target="_blank">
+                  </a>
+                </li>
+              </ul>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+    <div id="body" class="d-flex flex-column justify-content-center w-100 ps-5 pe-4">
+      <div id="header">
+        <h1 id="title" class="display-1 d-flex flex-wrap justify-content-center">
+          <div class="d-flex flex-xs-column flex-md-row" id="name">
+            <div class="d-flex">
+              <p>J</p>
+              <p>a</p>
+              <p>s</p>
+              <p>o</p>
+              <p>n</p>
+            </div>
+            <span style="display: inline-block">&nbsp;</span>
+            <div class="d-flex">
+              <p>M</p>
+              <p>u</p>
+              <p>r</p>
+              <p>r</p>
+              <p>a</p>
+              <p>y</p>
+            </div>
+          </div>
+        </h1>
+      </div>
+      <div class="d-flex flex-column align-items-center" id="bodyContent">
+        <div class="d-flex flex-column align-items-center" id="about">
+          <h2 class="display-4">About Me</h2>
+          <p>
+            I am a young full stack web developer based out of Indianapolis,
+            Indiana. I enjoy working to create useful and practical
+            applications while growing my skillset.
+          </p>
+          <p>
+            Outside of developing, I have a deep love for all things sports. I
+            also enjoy pursuing fitness and taking time to unwind through
+            video games.
+          </p>
+        </div>
+        <div class="d-flex flex-column align-items-center w-auto" id="skills">
+          <h2 class="display-4">Skills</h2>
+          <p>These are some of the tools that I have been working with:</p>
+          <div class="d-flex flex-wrap justify-content-around" id="tools">
+            <div class="d-flex flex-column justify-content-center align-items-center" id="skill">
+              <img id="htmlLogo" src="./images/html-logo.png" alt="HTML 5" />
+              <p>HTML</p>
+            </div>
+            <div class="d-flex flex-column justify-content-center align-items-center" id="skill">
+              <img id="cssLogo" src="./images/css3-logo.png" alt="CSS 3" />
+              <p>CSS</p>
+            </div>
+            <div class="d-flex flex-column justify-content-center align-items-center" id="skill">
+              <img src="./images/js-logo.svg" alt="Javascript" />
+              <p>JavaScript</p>
+            </div>
+            <div class="d-flex flex-column justify-content-center align-items-center" id="skill">
+              <img src="./images/nodejs-logo.png" alt="Node Js" />
+              <p>NodeJs</p>
+            </div>
+            <div class="d-flex flex-column justify-content-center align-items-center" id="skill">
+              <img src="./images/react-logo.png" alt="React" />
+              <p>React Js</p>
+            </div>
+            <div class="d-flex flex-column justify-content-center align-items-center" id="skill">
+              <img src="./images/Bootstrap-logo.png" alt="Bootstrap 5" />
+              <p>Bootstrap 5</p>
+            </div>
+            <div class="d-flex flex-column justify-content-center align-items-center" id="skill">
+              <img src="./images/mongodb-logo.png" alt="MongoDB" />
+              <p>MongoDB</p>
+            </div>
+            <div class="d-flex flex-column justify-content-center align-items-center" id="skill">
+              <img src="./images/nextjs-logo.png" alt="Next Js" />
+              <p>Next Js</p>
+            </div>
           </div>
         </div>
-      </nav>
-      <div
-        id="body"
-        class="d-flex flex-column justify-content-center w-100 ps-5 pe-4"
-      >
-        <div id="header">
-          <h1
-            id="title"
-            class="display-1 d-flex flex-wrap justify-content-center"
-          >
-            <div class="d-flex flex-xs-column flex-md-row" id="name">
-              <div class="d-flex">
-                <p>J</p>
-                <p>a</p>
-                <p>s</p>
-                <p>o</p>
-                <p>n</p>
+        <div id="projects">
+          <h2 class="display-4">Projects</h2>
+          <div id="carouselExampleIndicators" class="carousel slide" data-bs-ride="carousel">
+            <div class="carousel-indicators">
+              <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active"
+                aria-current="true" aria-label="Slide 1"></button>
+              <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1"
+                aria-label="Slide 2"></button>
+              <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2"
+                aria-label="Slide 3"></button>
+            </div>
+            <div class="carousel-inner">
+              <div class="carousel-item active">
+                <div class="card">
+                  <img src="./images/chalkboard.jpg" class="d-block w-100" alt="..." />
+                  <div class="card-body">
+                    <h5 class="card-title">Project 1</h5>
+                    <p class="card-text">
+                      Here's an app that does something!
+                    </p>
+                    <button class="btn btn-primary">Live Site</button>
+                    <button class="btn btn-warning">Code</button>
+                  </div>
+                </div>
               </div>
-              <span style="display: inline-block">&nbsp;</span>
-              <div class="d-flex">
-                <p>M</p>
-                <p>u</p>
-                <p>r</p>
-                <p>r</p>
-                <p>a</p>
-                <p>y</p>
+              <div class="carousel-item">
+                <div class="card">
+                  <img src="./images/football-field-small.jpg" class="d-block w-100" alt="..." />
+                  <div class="card-body">
+                    <h5 class="card-title">Project 2</h5>
+                    <p class="card-text">
+                      Here's an app that does something different!
+                    </p>
+                    <button class="btn btn-primary">Live Site</button>
+                    <button class="btn btn-warning">Code</button>
+                  </div>
+                </div>
+              </div>
+              <div class="carousel-item">
+                <img src="..." class="d-block w-100" alt="..." />
               </div>
             </div>
-          </h1>
+            <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators"
+              data-bs-slide="prev">
+              <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+              <span class="visually-hidden">Previous</span>
+            </button>
+            <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators"
+              data-bs-slide="next">
+              <span class="carousel-control-next-icon" aria-hidden="true"></span>
+              <span class="visually-hidden">Next</span>
+            </button>
+          </div>
         </div>
-        <div class="d-flex flex-column align-items-center" id="bodyContent">
-          <div class="d-flex flex-column align-items-center" id="about">
-            <h2 class="display-4">About Me</h2>
-            <p>
-              I am a young full stack web developer based out of Indianapolis,
-              Indiana. I enjoy working to create useful and practical
-              applications while growing my skillset.
-            </p>
-            <p>
-              Outside of developing, I have a deep love for all things sports. I
-              also enjoy pursuing fitness and taking time to unwind through
-              video games.
-            </p>
-          </div>
-          <div class="d-flex flex-column align-items-center w-auto" id="skills">
-            <h2 class="display-4">Skills</h2>
-            <p>These are some of the tools that I have been working with:</p>
-            <div class="d-flex flex-wrap justify-content-around" id="tools">
-              <div
-                class="d-flex flex-column justify-content-center align-items-center"
-                id="skill"
-              >
-                <img id="htmlLogo" src="./images/html-logo.png" alt="HTML 5" />
-                <p>HTML</p>
+        <div id="contact">
+          <div class="d-flex flex-column align-items-center justify-content-center" id="socials">
+            <div>
+              <h3 class="display-5 text-align-center">
+                You can find me on these websites...
+              </h3>
+            </div>
+            <div class="d-flex w-100 justify-content-around" id="socialMedia">
+              <div id="LinkedInDiv">
+                <a id="LinkedInLink" class="w-3" href="https://www.linkedin.com/in/jason-murray-13b494174/"
+                  target="_blank">
+                </a>
               </div>
-              <div
-                class="d-flex flex-column justify-content-center align-items-center"
-                id="skill"
-              >
-                <img id="cssLogo" src="./images/css3-logo.png" alt="CSS 3" />
-                <p>CSS</p>
+              <div id="GitHubDiv">
+                <a id="GitHubLink" href="https://github.com/jasoonmurraay" class="w-3" target="_blank">
+                </a>
               </div>
-              <div
-                class="d-flex flex-column justify-content-center align-items-center"
-                id="skill"
-              >
-                <img src="./images/js-logo.svg" alt="Javascript" />
-                <p>JavaScript</p>
-              </div>
-              <div
-                class="d-flex flex-column justify-content-center align-items-center"
-                id="skill"
-              >
-                <img src="./images/nodejs-logo.png" alt="Node Js" />
-                <p>NodeJs</p>
-              </div>
-              <div
-                class="d-flex flex-column justify-content-center align-items-center"
-                id="skill"
-              >
-                <img src="./images/react-logo.png" alt="React" />
-                <p>React Js</p>
-              </div>
-              <div
-                class="d-flex flex-column justify-content-center align-items-center"
-                id="skill"
-              >
-                <img src="./images/Bootstrap-logo.png" alt="Bootstrap 5" />
-                <p>Bootstrap 5</p>
-              </div>
-              <div
-                class="d-flex flex-column justify-content-center align-items-center"
-                id="skill"
-              >
-                <img src="./images/mongodb-logo.png" alt="MongoDB" />
-                <p>MongoDB</p>
-              </div>
-              <div
-                class="d-flex flex-column justify-content-center align-items-center"
-                id="skill"
-              >
-                <img src="./images/nextjs-logo.png" alt="Next Js" />
-                <p>Next Js</p>
+              <div id="IndeedDiv">
+                <a id="IndeedLink" href="https://profile.indeed.com/?hl=en&co=US&from=gnav-homepage" class="w-3"
+                  target="_blank">
+                  <img id="IndeedIcon" src="./images/indeed-icon.png" onmouseout='this.src="./images/indeed-icon.png"'
+                    onmouseover='this.src="./images/indeed-white-icon.png"' alt="Indeed" class="img-fluid" />
+                </a>
               </div>
             </div>
           </div>
-          <div id="projects">
-            <h2 class="display-4">Projects</h2>
-            <div
-              id="carouselExampleIndicators"
-              class="carousel slide"
-              data-bs-ride="carousel"
-            >
-              <div class="carousel-indicators">
-                <button
-                  type="button"
-                  data-bs-target="#carouselExampleIndicators"
-                  data-bs-slide-to="0"
-                  class="active"
-                  aria-current="true"
-                  aria-label="Slide 1"
-                ></button>
-                <button
-                  type="button"
-                  data-bs-target="#carouselExampleIndicators"
-                  data-bs-slide-to="1"
-                  aria-label="Slide 2"
-                ></button>
-                <button
-                  type="button"
-                  data-bs-target="#carouselExampleIndicators"
-                  data-bs-slide-to="2"
-                  aria-label="Slide 3"
-                ></button>
-              </div>
-              <div class="carousel-inner">
-                <div class="carousel-item active">
-                  <div class="card">
-                    <img
-                      src="./images/chalkboard.jpg"
-                      class="d-block w-100"
-                      alt="..."
-                    />
-                    <div class="card-body">
-                      <h5 class="card-title">Project 1</h5>
-                      <p class="card-text">
-                        Here's an app that does something!
-                      </p>
-                      <button class="btn btn-primary">Live Site</button>
-                      <button class="btn btn-warning">Code</button>
-                    </div>
-                  </div>
-                </div>
-                <div class="carousel-item">
-                  <div class="card">
-                    <img
-                      src="./images/football-field-small.jpg"
-                      class="d-block w-100"
-                      alt="..."
-                    />
-                    <div class="card-body">
-                      <h5 class="card-title">Project 2</h5>
-                      <p class="card-text">
-                        Here's an app that does something different!
-                      </p>
-                      <button class="btn btn-primary">Live Site</button>
-                      <button class="btn btn-warning">Code</button>
-                    </div>
-                  </div>
-                </div>
-                <div class="carousel-item">
-                  <img src="..." class="d-block w-100" alt="..." />
-                </div>
-              </div>
-              <button
-                class="carousel-control-prev"
-                type="button"
-                data-bs-target="#carouselExampleIndicators"
-                data-bs-slide="prev"
-              >
-                <span
-                  class="carousel-control-prev-icon"
-                  aria-hidden="true"
-                ></span>
-                <span class="visually-hidden">Previous</span>
-              </button>
-              <button
-                class="carousel-control-next"
-                type="button"
-                data-bs-target="#carouselExampleIndicators"
-                data-bs-slide="next"
-              >
-                <span
-                  class="carousel-control-next-icon"
-                  aria-hidden="true"
-                ></span>
-                <span class="visually-hidden">Next</span>
-              </button>
-            </div>
-          </div>
-          <div id="contact">
-            <div
-              class="d-flex flex-column align-items-center justify-content-center"
-              id="socials"
-            >
-              <div>
-                <h3 class="display-5 text-align-center">
-                  You can find me on these websites...
-                </h3>
-              </div>
-              <div class="d-flex w-100 justify-content-around" id="socialMedia">
-                <div id="LinkedInDiv">
-                  <a
-                    id="LinkedInLink"
-                    class="w-3"
-                    href="https://www.linkedin.com/in/jason-murray-13b494174/"
-                    target="_blank"
-                  >
-                  </a>
-                </div>
-                <div id="GitHubDiv">
-                  <a
-                    id="GitHubLink"
-                    href="https://github.com/jasoonmurraay"
-                    class="w-3"
-                    target="_blank"
-                  >
-                  </a>
-                </div>
-                <div id="IndeedDiv">
-                  <a
-                    id="IndeedLink"
-                    href="https://profile.indeed.com/?hl=en&co=US&from=gnav-homepage"
-                    class="w-3"
-                    target="_blank"
-                  >
-                    <img
-                      id="IndeedIcon"
-                      src="./images/indeed-icon.png"
-                      onmouseout='this.src="./images/indeed-icon.png"'
-                      onmouseover='this.src="./images/indeed-white-icon.png"'
-                      alt="Indeed"
-                      class="img-fluid"
-                    />
-                  </a>
-                </div>
-              </div>
-            </div>
-            <div class="d-flex flex-column align-items-center justify-content-center" id="emailDiv">
-              <h2 class="display-4">... or you can send me a message!</h2>
-              <a href="">
-                <img
-                  src="./images/mail-icon-red.png"
-                  onmouseout='this.src="./images/mail-icon-red.png"'
-                  onmouseover='this.src="./images/mail-icon-white.png"'
-                  id="mailIcon"
-                  alt=""
-                />
-              </a>
-            </div>
-            <!-- <form class="w-80 d-flex flex-column" id="contactForm">
-              <div class="d-flex justify-content-between">
-                <input
-                  id="firstNameInput"
-                  class="form-control"
-                  type="text"
-                  placeholder="First Name"
-                />
-                <input
-                  id="lastNameInput"
-                  class="form-control"
-                  type="text"
-                  placeholder="Last Name"
-                />
-              </div>
-              <input
-                id="emailInput"
-                class="form-control"
-                type="email"
-                placeholder="Your email address"
-              />
-              <input
-                id="subjectInput"
-                class="form-control"
-                placeholder="Subject"
-                type="text"
-              />
-              <textarea
-                class="form-control"
-                name="formContent"
-                id="formContent"
-                cols="30"
-                rows="10"
-                placeholder="Your message..."
-              ></textarea>
-              <button type="submit" id="submitBtn" class="btn">Send</button>
-            </form> -->
+          <div class="d-flex flex-column align-items-center justify-content-center" id="emailDiv">
+            <h2 class="display-4">... or you can send me a message!</h2>
+            <a href="">
+              <img src="./images/mail-icon-red.png" onmouseout='this.src="./images/mail-icon-red.png"'
+                onmouseover='this.src="./images/mail-icon-white.png"' id="mailIcon" alt="" />
+            </a>
           </div>
         </div>
       </div>
     </div>
+  </div>
 
-    <script
-      src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
-      integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
-      crossorigin="anonymous"
-    ></script>
-    <script
-      type="text/javascript"
-      src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js"
-    ></script>
-    <script src="app.js"></script>
-  </body>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+    crossorigin="anonymous"></script>
+  <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js"></script>
+  <script src="app.js"></script>
+</body>
+
 </html>
