@@ -3,6 +3,16 @@ const navLinks = document.getElementById("navLinks");
 const navSocials = document.getElementById("navSocials");
 const navContent = document.getElementById("navbarSupportedContent");
 let initWindow = window.innerWidth
+let windowHeight = window.innerHeight
+// const observer = new IntersectionObserver(entries => {
+//   console.log(entries)
+//   entries.forEach(entry => {
+//     if (entry.isIntersecting) {
+//       console.log("intersecting!")
+//       entry.target.classList.remove('hidden')
+//     }
+//   })
+// })
 
 const firstName = document.getElementById("firstNameInput");
 const lastName = document.getElementById("lastNameInput");
@@ -11,9 +21,35 @@ const subject = document.getElementById("subjectInput");
 const content = document.getElementById("formContent");
 const button = document.getElementById("submitBtn");
 const form = document.getElementById("contactForm");
-const initFunc = () => {
-  emailjs.init("rMq5QqZkeaKQKkDrm");
-};
+const about = document.getElementById('about')
+const faders = document.querySelectorAll('.fade-in')
+// const initFunc = () => {
+//   emailjs.init("rMq5QqZkeaKQKkDrm");
+// };
+
+// observer.observe(about)
+
+const appearOptions = {
+  threshold: 0.5,
+  rootMargin: '0px 0px -100px 0px'
+}
+
+const appearOnScroll = new IntersectionObserver((entries, appearOnScroll) => {
+  entries.forEach(entry => {
+    // console.log(entry.intersectionRatio)
+    if (!entry.isIntersecting) {
+      console.log("Intersecting!")
+      return;
+    } else {
+      entry.target.classList.remove('hidden')
+      appearOnScroll.unobserve(entry.target)
+    }
+  })
+}, appearOptions)
+
+faders.forEach(fader => {
+  appearOnScroll.observe(fader)
+})
 
 const showNav = () => {
   navLinks.classList.remove("d-none");
@@ -36,16 +72,6 @@ const hideNav = () => {
 if (window.innerWidth > 991) {
   showNav();
 }
-
-// const onFormSubmit = form.addEventListener("submit", (event) => {
-//   event.preventDefault();
-//   const enteredFirstName = firstName.value;
-//   const enteredLastName = lastName.value;
-//   const enteredEmail = email.value;
-//   const enteredSubject = subject.value;
-//   const enteredContent = content.value;
-//   emailjs.sendForm("contact_service", "contact_form", this);
-// });
 
 document.querySelectorAll(".nav-link").forEach((link) => {
   link.addEventListener("click", () => {
@@ -71,7 +97,7 @@ addEventListener("resize", (event) => {
   console.log(window.innerWidth)
   if (window.innerWidth > 991) {
     showNav()
-  } else if (window.innerWidth <= 991 && initWindow >=991) {
+  } else if (window.innerWidth <= 991 && initWindow >= 991) {
     hideNav()
   }
   initWindow = window.innerWidth

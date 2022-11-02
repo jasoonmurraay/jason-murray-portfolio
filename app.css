@@ -1,10 +1,10 @@
-html {
-    scroll-behavior: smooth;
+#page {
+    display: flex;
+    flex-direction: row-reverse;
 }
 
-
 #title {
-    margin-top: 5rem;
+    /* margin-top: 5rem; */
     margin-bottom: 5rem;
 }
 
@@ -13,18 +13,27 @@ html {
     margin-top: 2rem
 }
 
-#about,
-#skills,
-#projects {
+.fade-in {
     margin-bottom: 10rem;
     margin-top: 10rem;
     padding-bottom: 5rem;
     padding-top: 5rem;
     padding-left: 1rem;
     padding-right: 1rem;
+    opacity: 1;
+    transform: translateX(0%);
+    transition: all 500ms ease-in
 }
 
-#contact {
+.hidden {
+    transform: translateX(10%);
+    opacity: 0;
+    transition: opacity 250ms ease-in;
+}
+
+
+
+.contact {
     margin-top: 10rem;
     padding-top: 5rem;
     padding-left: 1rem;
@@ -35,6 +44,11 @@ html {
 #navbar {
     background-color: #e00122;
     color: white
+}
+
+#navLinks {
+    display: flex;
+    flex-direction: column;
 }
 
 #body {
@@ -256,7 +270,7 @@ html {
     }
 }
 
-.form-control {
+/* .form-control {
     margin-top: 1rem;
     margin-bottom: 1rem;
     background-color: black;
@@ -269,7 +283,7 @@ html {
     color: white;
     border: 2px solid #e00122;
     box-shadow: none;
-}
+} */
 
 .card {
     color: black;
@@ -346,5 +360,25 @@ html {
 
     #IndNavItem:hover {
         background-image: url('./images/indeed-icon.png');
+    }
+}
+
+@media (max-width: 525px) {
+    #page {
+        display: flex;
+        flex-direction: column;
+    }
+
+    #navSocials {
+        display: none !important;
+    }
+
+    #title {
+        margin-top: none;
+    }
+
+    .fade-in {
+        margin-top: 0.5rem;
+        margin-bottom: 0.5rem;
     }
 }

@@ -12,7 +12,7 @@
 </head>
 
 <body>
-  <div class="d-flex flex-row-reverse">
+  <div id="page">
     <nav id="navbar"
       class="navbar navbar-expand-lg navbar-dark w-xs-2 w-md-auto d-flex flex-column justify-content-start">
       <div id="navContainer" class="d-flex flex-column container-fluid sticky-top">
@@ -61,7 +61,7 @@
     </nav>
     <div id="body" class="d-flex flex-column justify-content-center w-100 ps-5 pe-4">
       <div id="header">
-        <h1 id="title" class="display-1 d-flex flex-wrap justify-content-center">
+        <h1 id="title" class="display-1 d-flex flex-wrap justify-content-center fade-in hidden">
           <div class="d-flex flex-xs-column flex-md-row" id="name">
             <div class="d-flex">
               <p>J</p>
@@ -83,7 +83,7 @@
         </h1>
       </div>
       <div class="d-flex flex-column align-items-center" id="bodyContent">
-        <div class="d-flex flex-column align-items-center" id="about">
+        <div class="d-flex flex-column align-items-center about hidden fade-in">
           <h2 class="display-4">About Me</h2>
           <p>
             I am a young full stack web developer based out of Indianapolis,
@@ -96,7 +96,7 @@
             video games.
           </p>
         </div>
-        <div class="d-flex flex-column align-items-center w-auto" id="skills">
+        <div class="d-flex flex-column align-items-center w-auto skills hidden fade-in">
           <h2 class="display-4">Skills</h2>
           <p>These are some of the tools that I have been working with:</p>
           <div class="d-flex flex-wrap justify-content-around" id="tools">
@@ -134,7 +134,7 @@
             </div>
           </div>
         </div>
-        <div id="projects">
+        <div class="fade-in hidden projects">
           <h2 class="display-4">Projects</h2>
           <div id="carouselExampleIndicators" class="carousel slide" data-bs-ride="carousel">
             <div class="carousel-indicators">
@@ -188,8 +188,8 @@
             </button>
           </div>
         </div>
-        <div id="contact">
-          <div class="d-flex flex-column align-items-center justify-content-center" id="socials">
+        <div class="contact">
+          <div class="d-flex flex-column align-items-center justify-content-center fade-in hidden">
             <div>
               <h3 class="display-5 text-align-center">
                 You can find me on these websites...
@@ -214,7 +214,7 @@
               </div>
             </div>
           </div>
-          <div class="d-flex flex-column align-items-center justify-content-center" id="emailDiv">
+          <div class="d-flex flex-column align-items-center justify-content-center fade-in hidden" id="emailDiv">
             <h2 class="display-4">... or you can send me a message!</h2>
             <a href="">
               <img src="./images/mail-icon-red.png" onmouseout='this.src="./images/mail-icon-red.png"'
